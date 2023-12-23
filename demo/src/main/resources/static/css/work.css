@@ -1,0 +1,192 @@
+/* Reset some default styles */
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Global styles */
+body {
+    background-color: #f3f6fd;
+    font-family: Arial, sans-serif;
+}
+
+
+.content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 10px 10px 10px;
+    background-color: #fff;
+    margin-left: 150px;
+    width: auto;
+}
+
+.centered-content {
+    background-color: #fff;
+    margin: auto;
+    width: 95%;
+    min-height: 640px;
+    overflow: hidden;
+}
+
+
+hr {
+    margin-left: 11px;
+    margin-right: 18px;
+}
+
+.table-head-list {
+    display: flex;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 16px;
+    margin-top: 15px;
+    width: auto;
+}
+
+.table-h2 {
+    text-align: left;
+    flex: 14;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-section {
+    flex: 2;
+    margin-top: 20px;
+
+}
+
+.createbutton {
+    vertical-align: right;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 20px;
+    border: 1.5px solid #6675e3;
+    background-color: #6675e3;
+}
+
+.createbutton:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #6675e3;
+}
+
+.work {
+    padding-bottom: 30px;
+}
+
+:root {
+    --tag-color-one: #e0fbf6;
+    --tag-color-text-one: #58c2a9;
+    --tag-color-two: #ece7fe;
+    --tag-color-text-two: #8972f3;
+    --tag-color-three: #fde7ea;
+    --tag-color-text-three: #e77f89;
+    --tag-color-four: #f7f8fc;
+    --tag-color-text-four: #a0a6b5;
+}
+
+
+.page-content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 20px 0px 20px;
+    border: #ddd 1px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    .header {
+        font-size: 20px;
+    }
+}
+
+.task-wrap {
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    color: var(--task-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        transform: translatex(10px);
+    }
+
+    label {
+        cursor: pointer;
+    }
+}
+
+.task a {
+    vertical-align: center;
+}
+
+.label-text {
+    margin: auto 0 ;
+}
+
+.tag {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 50px;
+
+    &.approved {
+        text-align: center;
+        background-color: var(--tag-color-one);
+        color: var(--tag-color-text-one);
+    }
+
+    &.progress {
+        background-color: var(--tag-color-two);
+        color: var(--tag-color-text-two);
+    }
+
+    &.review {
+        background-color: var(--tag-color-three);
+        color: var(--tag-color-text-three);
+    }
+
+    &.waiting {
+        background-color: var(--tag-color-four);
+        color: var(--tag-color-text-four);
+    }
+}
+
+.upcoming {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 520px) {
+    .page-content {
+        padding: 40px 10px 0 10px;
+    }
+
+    .right-content {
+        padding: 10px 16px;
+    }
+
+    .category {
+        padding: 20px;
+    }
+}

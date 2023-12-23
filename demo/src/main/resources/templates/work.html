@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- 목표 리스트 창 -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/work.css">
+	<link rel="stylesheet" href="/css/sidebar.css">
+	<link rel="stylesheet" href="/css/sideNavbar.css">
+	<title>BPM</title>
+</head>
+<body>
+
+<header>
+	<nav>
+		<div class="nav-left">
+			<a id="exitButton" href="/project/projectManagerList">나가기</a>
+		</div>
+		<div class="nav-center">
+			<h1 id="projectName" th:text="${projectDto.getTitle()}">프로젝트ㅡㅡㅡ</h1>
+		</div>
+		<div class="nav-right">
+			<p id="loggedInUser" th:text="${sessionUser.getName()}">ssss</p>
+		</div>
+	</nav>
+</header>
+<aside class="sidebar">
+	<div class="menu">
+		<ul>
+			<li><a th:href="@{/project/main}"><img src="/img/house-solid.svg" alt="">홈</a></li>
+			<li><a href="/project/goals"><img src="/img/lightbulb-solid.svg" alt="">목표</a></li>
+			<li class="menu-select"><a href="/project/works"><img src="/img/layer-group-solid.svg" alt="">작업</a>
+			</li>
+			<li>
+				<a href="/project/document"><img src="/img/file-invoice-solid.svg" alt="">문서</a>
+			</li>
+			<li><a href="/project/calender"><img src="/img/calendar-solid.svg" alt="">일정</a></li>
+			<li><a href="/project/recvMessageList"><img src="/img/email.png" alt="">메세지</a></li>
+			<li><a href="/user/search"><img src="/img/add-user.png" alt="">초대</a></li>
+		</ul>
+	</div>
+</aside>
+<div class="main">
+	<div class="sub-nav">
+		<ul class="sub-navbar">
+			<li class="sub-nav-item-active"><a class="active" href="/project/works">전체 작업</a></li>
+			<li class="sub-nav-item"><a href="/project/myWorks">나의 작업</a></li>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="content">
+	<div class="centered-content">
+		<div class="work">
+			<div class="table-head-list">
+				<h2 class="table-h2">작업 > 전체 작업</h2>
+				<div class="button-section"><a href="/project/work/create">
+					<button class="createbutton">새로 만들기</button>
+				</a></div>
+			</div>
+			<hr>
+			<div class="page-content"
+				 th:each="headDto : ${headDtoList}">
+				<a class="header upcoming"
+				   th:text="${headDto.getTitle()}" th:href="@{/project/goal/headView/{id}(id=${headDto.headId})}">
+				</a>
+				<div class="task-wrap" th:each="workDto : ${workDtoList}">
+					<a class="task"
+					   th:if="${headDto.getHeadId() == workDto.getHeadIdToWork().getHeadId()}"
+					th:href="@{/project/work/detail/{id}(id=${workDto.workId})}">
+						<span class="label-text" th:text="'&bull; &nbsp; &nbsp;' + ${workDto.title}"></span>
+						<span class="tag progress" th:if="${workDto.getCompletion() == 0}">진행중</span>
+						<span class="tag approved" th:if="${workDto.getCompletion() == 1}">완료</span>
+						<span class="tag waiting" th:if="${workDto.getCompletion() == 2}">계획중</span>
+						<span class="tag review" th:if="${workDto.getCompletion() == 3}">미완료</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

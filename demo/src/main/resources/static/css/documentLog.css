@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10em;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hr a {
+    text-decoration: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.back-button {
+    text-decoration: none;
+    width: 100px;
+    height: 10px;
+    text-align: center;
+    background: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    color: #6675e3;
+    border: #6675e3 solid 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    line-height: 30px;
+    margin: 10px 5px;
+}
+
+.back-button:hover,
+.back-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #6675e3;
+}
+
+.title {
+    color: #000000;
+    font-size: 48px;
+    padding-left: 40px;
+}
+
+.middle-box {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.board_list {
+    margin: 20px;
+    width: 100%;
+    background-color: #f3f6fd;
+}
+
+.board_list td {
+    color: #222;
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.revert-button {
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    background: #6675e3;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+.revert-button:hover,
+.revert-button:focus {
+    transition: 0.3s;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #6675e3;
+}

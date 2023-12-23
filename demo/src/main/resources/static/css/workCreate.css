@@ -1,0 +1,239 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1 {
+    color: #5161CE;
+    font-size: 48px;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+
+.back-button {
+    background-color: #fff;
+    color: #5161CE;
+    border: 1px solid #5161CE;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 2rem;
+    transition: 0.5s;
+}
+
+.back-button:hover {
+    background-color: #5161CE;
+    color: #fff;
+}
+
+.create-goal {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 1px;
+    margin-bottom: 2rem;
+}
+
+.label-detail {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+}
+
+.essential {
+    padding-left: 5px;
+    color: rgb(160, 60, 60);
+}
+
+.input-detail {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 1px;
+}
+
+.input-box {
+    height: 36px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 2px solid #5161CE;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    padding: 0 12px;
+}
+
+.input-box:focus {
+    border: 2px solid #5161CE;
+    outline: none;
+}
+
+.detail-input-box {
+    font-family: "Noto Sans KR", sans-serif;
+    height: 42px;
+    padding-bottom: 6px;
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: #fff;
+    border: 2px solid #5161CE;
+    border-radius: 4px;
+    padding: 12px 12px;
+    color: #000;
+    resize: none;
+}
+
+.detail-input-box:focus {
+    border: 2px solid #5161CE;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+}
+
+.search-input-detail {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    min-width: 1px;
+}
+
+.search-input-box {
+    width: 80%;
+    height: 36px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: #fff;
+    border: 2px solid #5161CE;
+    border-radius: 4px;
+    padding: 12px 12px;
+    color: #000;
+}
+
+.search-input-box:focus {
+    background-color: #fff;
+    border: 2px solid #5161CE;
+    border-radius: 4px;
+    outline: none;
+}
+
+.button-form {
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    margin-left: auto;
+    color: #000;
+}
+
+.button-form:hover {
+    background-color: #555;
+}
+
+.horizon-divider {
+    background-color: #333;
+    height: 1px;
+    margin: 35px 0 25px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-btn {
+    width: 15%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #949DD7;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.footer-btn:hover {
+    background-color: #5161CE;
+}
+
+
+select {
+    outline: none;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    background-color: #fff;
+    border: 2px solid #5161CE;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    height: 3em;
+    background-color: #fff;
+    border: 2px solid #5161CE;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: rgb(233, 233, 233);
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+.horizon-divider {
+    background-color: #5161CE;
+    height: 0.2px;
+    margin: 10px 0 30px 0;
+}

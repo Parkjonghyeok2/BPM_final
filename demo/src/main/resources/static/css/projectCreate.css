@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: white;
+}
+
+a {
+    text-decoration: none
+}
+
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 800px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.head-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.head-container h3 {
+    color: #000;
+    margin-top: 30px;
+    font-size: 48px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.fa-solid {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.section {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+
+input {
+    width: 70%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    box-sizing: border-box;
+    border: 2px solid #999999;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    padding: 0 12px;
+    height: 50px;
+}
+
+input:focus {
+    border: 2px solid #000;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    box-sizing: border-box;
+    border: 2px solid #999;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 12px;
+    height: 100px;
+}
+
+textarea:focus {
+    border: 2px solid #000;
+    outline: none;
+}
+
+.friend-form {
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+}
+
+.friend-search-results {
+    margin: 20px;
+    text-align: left;
+}
+
+.friend-result {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    max-width: 70%;
+    overflow: auto;
+    min-height: 200px;
+}
+
+form input {
+    margin-bottom: 30px; /* 원하는 간격 크기로 조정 가능 */
+}
+
+form textarea {
+    margin-bottom: 30px;
+}
+
+.bottom-section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.write-button {
+    width: 10rem;
+    height: 38px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 1px 16px;
+    background-color: #C5C5F1;
+    color: #fff;
+    border: 1.5px solid #C5C5F1;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    margin-right: 10px;
+}
+
+.write-button:focus,
+.write-button:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+.write-button2 {
+    width: 10rem;
+    height: 38px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 1px 16px;
+    background-color: #6675e3;
+    color: #fff;
+    border: 1.5px solid #6675e3;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+.write-button2:focus,
+.write-button2:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #6675e3;
+}

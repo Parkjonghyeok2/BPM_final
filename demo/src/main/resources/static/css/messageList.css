@@ -1,0 +1,125 @@
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f3f6fd;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fff;
+    margin-left: 150px;
+}
+
+.message-container {
+    background-color: #fff;
+    margin: auto;
+    width: 95%;
+    min-height: 640px;
+    overflow: hidden;
+}
+
+.content-header {
+    width: 80%;
+    padding-top: 20px;
+    display: flex;
+    margin: auto;
+}
+
+.content-header h2 {
+    text-align: left;
+    flex: 12;
+    box-sizing: border-box;
+}
+
+.incoming-message {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.5px;
+    padding: 10px;
+}
+
+.incoming-message:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.message-header {
+    display: flex;
+}
+
+.message-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.message-title {
+    flex: 6;
+    font-weight: bold;
+}
+
+.message-people {
+    flex: 4;
+    color: #888;
+
+}
+
+.message-time {
+    flex: 4;
+    color: #888;
+}
+
+.message-content {
+    text-decoration: none;
+    color: black;
+}
+
+.button-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    text-decoration: none;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 10px;
+    color: #000000;
+    border: 1.5px solid #555555;
+    background-color: #FFFFFF;
+}
+
+.button-section:hover {
+    color: #FFFFFF;
+    border: 1.5px solid #777777;
+    background-color: #777777;
+}
+
+.message-list {
+    width: 80%;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.delete-button {
+
+    flex: 4;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    color: red;
+}
+
+.message-content {
+    margin-top: 10px;
+}
