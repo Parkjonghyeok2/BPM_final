@@ -1,15 +1,8 @@
 # BPM (Block Project Manager)
-
-|       이름         |     역할     |   대표 담당 파트  |
-| ------------------- | -------------- | ------------------------------------- |
-| 박종혁 |     Full-Stack     | 전체 디자인, 기본 게시판 CRUD, 멤버 초대|
-| 신현성 |     Back-End, DB       | 작업별 완료 기능 (연쇄반응), 날짜별 생성 제한 및 예외처리  | 
-| 유영훈 |     Back-End, DB       | 문서편집기 전체 기능 , 서버 구축 | 
-
+Block Project Manager
 <br>
 
 ## 개요
-Block Project Manager
 프로젝트의 현황을 한눈에 확인하고 <br>
 업무를 분류별로 나누어 협업과 관리를 도와주는 프로젝트 템플릿 웹서비스 <br>
 <br>
@@ -93,7 +86,15 @@ Block Project Manager
 목표 와 작업을 날짜와 종속 별로 확인할 수 있는 기능으로 google, fullcalender API를 기반으로 구현되어 있다. <br> 
 <br> 
 <br> 
+
+|       이름         |     역할     |   대표 담당 파트  |
+| ------------------- | -------------- | ------------------------------------- |
+| 박종혁 |     Full-Stack     | 전체 디자인, 기본 게시판 CRUD, 멤버 초대|
+| 신현성 |     Back-End, DB       | 작업별 완료 기능 (연쇄반응), 날짜별 생성 제한 및 예외처리  | 
+| 유영훈 |     Back-End, DB       | 문서편집기 전체 기능 , 서버 구축 | 
 <br> 
+<br> 
+
 ## PPT
 ![git에 올릴 ppt_1](https://github.com/ppark-jjong/BPM_Final/assets/101304928/b0538ee6-09b1-4052-b4d9-7ab1940bff67)
 ![git에 올릴 ppt_2](https://github.com/ppark-jjong/BPM_Final/assets/101304928/bb90587a-19da-4ea7-a2c4-76bced2c74ee)
