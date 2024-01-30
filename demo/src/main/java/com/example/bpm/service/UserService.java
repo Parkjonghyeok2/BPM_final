@@ -25,7 +25,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class UserService {
     @Autowired
-    final private UserRepository userRepository;
+    private final UserRepository userRepository;
     @Autowired
     final private ProjectRoleRepository projectRoleRepository;
     @Autowired

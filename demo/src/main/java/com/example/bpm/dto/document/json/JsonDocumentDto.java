@@ -27,6 +27,7 @@ public class JsonDocumentDto {
         return documentEntity;
     }
 
+//    LinkedHashMap 을 block Entity 객체로 교체하기 위한 메서드
     public List<BlockEntity> blockEntityOut(){
 
         List<BlockEntity> blockEntityEntityList = new ArrayList<>();

@@ -171,11 +171,13 @@ public class DocumentService {
 
     public String saveFile(MultipartFile file) throws IOException{
 
+
         String uuid = UUID.randomUUID().toString();
         String ext = file.getContentType();
-
+        testproject-412601-fa47ade90a4f
+// 구글 클라우드 시스템에서 제공해줌 (키파일과 주소를)
         InputStream keyFile = ResourceUtils.getURL("classpath:" + "oceanic-will-385316-249d7b5e0f68.json").openStream();
-
+// 스토리지라는 객체에 키파일과 함꼐 생성함
         Storage storage = StorageOptions.newBuilder().setProjectId("oceanic-will-385316")
                 .setCredentials(GoogleCredentials.fromStream(keyFile))
                 .build().getService();
@@ -187,6 +189,7 @@ public class DocumentService {
                 file.getInputStream()
         );
 
+//        uuid를 붙이면 파일의 고유한 id 값이 완성된다
         return "https://storage.cloud.google.com/bpm-file-storage/"+uuid;
     }
 

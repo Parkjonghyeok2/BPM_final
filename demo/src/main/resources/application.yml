@@ -14,9 +14,9 @@ spring:
   #DB 정보
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://bpm-mariadb-database.cducqgd2o16m.ap-northeast-2.rds.amazonaws.com:3306/bpm
-    username: admin
-    password: 1q2w3e4r
+    url: jdbc:mariadb://localhost:3306/bpm
+    username: root
+    password: 1234
   #타입리프 캐시 설정
   thymeleaf:
     cache: false
@@ -25,7 +25,7 @@ spring:
     gcp:
       storage:
         credentials:
-          location: classpath:oceanic-will-385316-249d7b5e0f68.json
+          location: classpath:testproject-412601-fa47ade90a4f.json
     project-id: oceanic-will-385316
     bucket: bpm-file-storage
   #파일 크기 설정

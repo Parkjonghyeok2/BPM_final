@@ -30,6 +30,7 @@ public class DocumentRestController {
 
         JsonDocumentDto jsonDocumentDto = new JsonDocumentDto();
 
+//      Json data 형식 그대로 가진 Dto
         jsonDocumentDto.setTitle(data.get("title").toString());
         jsonDocumentDto.setId(data.get("id").toString());
 
